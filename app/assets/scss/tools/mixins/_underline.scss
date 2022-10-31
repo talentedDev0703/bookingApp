@@ -1,0 +1,59 @@
+@mixin text-underline-crop($background) {
+    text-shadow:  .03em 0 $background,
+                  -.03em 0 $background,
+                  0 .03em $background,
+                  0 -.03em $background,
+                  .06em 0 $background,
+                  -.06em 0 $background,
+                  .09em 0 $background,
+                  -.09em 0 $background,
+                  .12em 0 $background,
+                  -.12em 0 $background,
+                  .15em 0 $background,
+                  -.15em 0 $background;
+}
+
+@mixin text-background($color-bg, $color-text, $size) {
+   
+    background-image: linear-gradient($color-text, $color-text);
+    background-size: $size $size;
+    background-repeat: repeat-x;
+    background-position:  0% 93%;
+
+}
+
+@mixin text-selection($selection) {
+    &::selection {
+        @include text-underline-crop($selection);
+
+        background: $selection;
+    }
+
+    &::-moz-selection {
+        @include text-underline-crop($selection);
+
+        background: $selection;
+    }
+}
+
+@mixin link-underline($background, $text, $selection, $size:1px){
+    @include text-underline-crop($background);
+    @include text-background($background, $text, $size);
+    @include text-selection($selection);
+
+    position: relative;
+    color: $text;
+    text-decoration: none;
+
+    *,
+    *:after,
+    &:after,
+    *:before,
+    &:before {
+        text-shadow: none;
+    }
+
+    &:visited {
+        color: $text;
+    }
+}

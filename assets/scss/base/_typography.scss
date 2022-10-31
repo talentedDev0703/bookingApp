@@ -1,0 +1,207 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.3;
+}
+
+// Bold.
+b,
+strong,
+.bold {
+    @include font-family(map-get($typography, bold));
+    font-weight: bold;
+}
+
+// Italic.
+em,
+i,
+.italic {
+    font-style: italic;
+}
+
+blockquote {
+    p {
+        border-left: 0.15rem solid map-deep-get($colors, black, 'color');
+        font-style: italic;
+        padding-left: 1rem;
+    }
+}
+
+// Code block.
+code,
+pre,
+var {
+    background-color: map-deep-get($colors, snow, 'color');
+}
+
+pre {
+    display: block;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+code {
+    line-height: 1rem;
+}
+
+
+hr {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, map-deep-get($colors, snow, 'color') 50%);
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    background-size: 100% 0.15rem;
+    border: 0;
+    margin: 0;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+small {
+    font-size: 12px;
+}
+
+.Type {
+
+    outline: none;
+
+    h2 {
+        text-align: center;
+    }
+
+    *+* {
+        @include rem(( margin-top: 30px));
+    } // Lists.
+    ul,
+    ol {
+
+        li {
+            font-feature-settings: 'kern', 'onum', 'liga';
+            margin-left: 2rem;
+            margin-top: 0;
+
+            ol,
+            ul {
+                padding-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+    } // Ordered lists.
+    ol {
+        list-style-type: none;
+
+        li {
+            counter-increment: top-level;
+
+            &:before {
+                content: counter(top-level) '.';
+                font-feature-settings: 'lnum', 'tnum';
+                margin-left: -3rem;
+                position: absolute;
+                text-align: right;
+                width: 2em;
+            }
+
+            ul {
+
+                li {
+
+                    &:before {
+                        content: '';
+                    }
+
+                    ol {
+
+                        li {
+                            counter-increment: alt-level;
+
+                            &:before {
+                                content: counter(alt-level) '.';
+                            }
+                        }
+                    }
+                }
+            }
+
+            ol {
+
+                li {
+                    counter-increment: sub-level;
+
+                    &:before {
+                        content: counter(top-level) '.' counter(sub-level);
+                    }
+
+                    ul {
+
+                        li {
+
+                            &:before {
+                                content: '';
+                            }
+                        }
+                    }
+
+                    ol {
+
+                        li {
+                            counter-increment: sub-sub-level;
+
+                            &:before {
+                                content: counter(top-level) '.' counter(sub-level) '.' counter(sub-sub-level);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // Definition lists.
+    dl {
+
+        dt,
+        dd {
+            font-feature-settings: 'kern', 'onum', 'liga';
+            margin-left: 2rem;
+            margin-top: 0;
+        }
+
+        dt {
+            @include font-family(map-get($typography, bold));
+            font-weight: bold;
+        }
+
+        dd+dt {
+            padding-top: 1rem;
+        }
+    }
+
+}
+
+table {
+    font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+    font-style: normal;
+    width: 100%;
+}
+
+h2 {
+    @include font-family(map-get($typography, bold));
+}

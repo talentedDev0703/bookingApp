@@ -1,0 +1,43 @@
+<svg
+    width="120"
+    height="120"
+    viewBox="0 0 120 120"
+    xmlns="http://www.w3.org/2000/svg"
+    class="Features-wifi">
+    <defs>
+        <rect
+            id="features-rect"
+            x="0"
+            y="0"
+            width="120"
+            height="100"/>
+        <linearGradient
+            x1="-12.6208826%"
+            y1="136.389974%"
+            x2="112.253484%"
+            y2="-18.0110677%"
+            id="features-gradient">
+            <stop
+                stop-color="#FBB040"
+                offset="0%"/>
+            <stop
+                stop-color="#EE3135"
+                offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g
+        fill="none"
+        fill-rule="evenodd"><rect
+            fill="url(#features-gradient)"
+            width="120"
+            height="120"
+            rx="60"/>
+        <mask
+            id="features-mask"
+            fill="white">
+            <use xlink:href="#features-rect"/>
+        </mask><g
+            stroke="#fff"
+            stroke-linejoin="bevel"
+            stroke-width="4">
+<path d="M33.7 62.4c14.5-14.5 38.1-14.5 52.7 0M44.2 72.9c8.7-8.7 22.9-8.7 31.6 0M54.7 83.4c2.9-2.9 7.6-2.9 10.5 0M23.1 51.8c20.4-20.4 53.4-20.4 73.7 0"/></g></g></svg>

@@ -1,0 +1,264 @@
+{
+    "primaryNav": [{
+            "title": "About Tours",
+            "href": "#about"
+        },
+        {
+            "title": "Tours",
+            "href": "#tours"
+        },
+        {
+            "title": "Gallery",
+            "href": "#gallery"
+        },
+        {
+            "title": "Roadmap",
+            "href": "#roadmap"
+        },
+        {
+            "title": "Social",
+            "href": "#social"
+        },
+        {
+            "title": "Contact",
+            "href": "#contact"
+        }
+    ],
+    "home": {
+        "logo": "Adriatic Sunsets logo - go back to homepage",
+        "hero": {
+            "title": "<span>There’s more to Dubrovnik</span><br />than the Old Town"
+        },
+        "about": {
+            "title": "Panoramic Rides around Dubrovnik",
+            "description": "Get out of Dubrovnik Old Town and see what lies beyond the walls! Check out the areas where locals live and work, glance at the green market where they buy fresh food. Past Renaissance palaces, sailboat masts and karst slopes, stop at the best panoramic spots around. Think: red roofs of the Old Town, sleepy boats in Gruž Bay, divine sunsets over the Elaphites. These relaxed sightseeing rides show you the entire town! Afterwards, you will not only have loads of #instacool photos, but also a completely fresh take on what to do in Dubrovnik! Coupled with sleek Mercedes Benz Sprinters and wind in your hair, our rides just might be the best hour and a half around here. ",
+            "list": [{
+                    "title": "A unique experience in Croatia",
+                    "description": "Our Mercedes Benz Sprinters are unique in the country. Their convertible roofs give us the superpower to run in spite of Dubrovnik weather, whether it rains or shines. Leather covers add a touch of luxury and tinted windows a dash of glam. With only 19 seats, you’re warranted a small-group experience. ",
+                    "image": "about1.jpg"
+                },
+                {
+                    "title": "Picture-perfect panoramas",
+                    "description": "Each of our rides features three stunning panorama points. The views from our exclusive spot on Srđ hill extend as far as Italy on clear days. From the bridge, marvel at Gruž Bay, Lapad peninsula and the Elaphite archipelago. At the motorway rest, hover directly above the terracotta roofs of Dubrovnik Old Town. On Sunset WOW, end with a glorious sunset on the Sunset beach.",
+                    "image": "about2.jpg"
+                },
+                {
+                    "title": "Entertaining commentary",
+                    "description": "A picture’s worth a thousand words, and our multilingual audio commentary will narrate those for you! After all, it is the stories behind places that are the soul of travel. GPS-navigation ensures stories and places are synced and individual headsets let you tune in and out as you please.",
+                    "image": "about3.jpg"
+                }
+            ],
+            "features": [{
+                    "title": "free wi-fi",
+                    "icon": "wifi.svg"
+                },
+                {
+                    "title": "air condition",
+                    "icon": "air.svg"
+                },
+                {
+                    "title": "usb charger",
+                    "icon": "usb.svg"
+                }
+            ]
+        },
+        "gallery": {
+            "title": "Gallery",
+            "description": "Can you believe these places look even better live?"
+        },
+        "tours": {
+            "title": "Our tours",
+            "description": "Choose your ride and buckle up.",
+            "list": [{
+                    "title": "Panoramic ride",
+                    "description": "You’ve seen Dubrovnik Old Town and you want more. You’re on a hunt for that one perfect panorama of Dubrovnik. You want to travel beyond the ordinary. Hop onto the panoramic ride, sit back and enjoy the views.",
+                    "duration": "Duration: 1:30h",
+                    "badge": "best buy",
+                    "images": {
+                        "small": "panoramic-small.jpg",
+                        "large": "panoramic-big.jpg"
+                    },
+                    "features": [{
+                            "title": "3 panorama stops",
+                            "icon": "photo.svg"
+                        },
+                        {
+                            "title": "Every day",
+                            "icon": "clock-small.svg"
+                        },
+                        {
+                            "title": "Kids friendly",
+                            "icon": "face.svg"
+                        }
+                    ],
+                    "price": "<small><s>150kn / person</s></small><br />135kn / person",
+                    "priceLoggedIn": "150kn / person",
+                    "book": "Book now"
+                },
+                {
+                    "title": "Total sightseeing",
+                    "description": "Coupling the panoramic ride with a guided tour of Dubrovnik Old Town, this is an ideal first date with the town. You’ll get ideas on what to do in Dubrovnik, info on its past and present, and gossip from Dubrovnik’s Game of Thrones days.",
+                    "duration": "Duration: 2:30h",
+                    "badge": "local guide",
+                    "images": {
+                        "small": "total-small.jpg",
+                        "large": "total-big.jpg"
+                    },
+                    "features": [{
+                            "title": "3 panorama stops",
+                            "icon": "photo.svg"
+                        },
+                        {
+                            "title": "Every day",
+                            "icon": "clock-small.svg"
+                        },
+                        {
+                            "title": "Plus tour of the Old Town",
+                            "icon": "sun.svg"
+                        }
+                    ],
+                    "price": "<small><s>250kn / person</s></small><br />225kn / person",
+                    "priceLoggedIn": "250kn / person",
+                    "book": "Book now"
+                },
+                {
+                    "title": "Private rental",
+                    "description": "Fantastic places lie at daytrip distance from Dubrovnik: vineyards of Pelješac, villages of Konavle, towns of Mostar and Kotor. But travel is all about the journey, so upgrade your small-group excursions with unhindered views and wind in your hair!",
+                    "duration": "Duration: 4h minimum",
+                    "images": {
+                        "small": "tour-small.jpg",
+                        "large": "tour.jpg"
+                    },
+                    "features": [{
+                            "title": "Up to 19pax",
+                            "icon": "photo.svg"
+                        },
+                        {
+                            "title": "4h minimum",
+                            "icon": "clock-small.svg"
+                        },
+                        {
+                            "title": "Private guide optional",
+                            "icon": "face.svg"
+                        }
+                    ],
+                    "price": "Price on request",
+                    "priceLoggedIn": "Price on request",
+                    "book": "Book now"
+                }
+            ],
+            "audioTitle": "Audio guide Available in"
+        },
+        "nextTour": {
+            "title": "Next tour",
+            "km": "km from you"
+        },
+        "roadmap": {
+            "title": "Roadmap",
+            "description": "Ready, steady, go and stop to take some photos!"
+        },
+        "bookNow": "Book now",
+        "loadMore": "Load more",
+        "userphotos": {
+            "title": "Dubrovnik through our passangers eyes",
+            "hashtag": "#AdriaticSunsets",
+            "error": "Sorry, the photos couldn't be fetched."
+        }
+    },
+    "footer": {
+        "contact": "Contact",
+        "links": "Useful links",
+        "about": "About Us",
+        "faq": "Frequently Asked Questions",
+        "terms": "Terms & Conditions"
+    },
+    "booking": {
+        "mainTitle": "You're booking",
+        "pickup": "Pickup location",
+        "pickupDefaultOption": "Select pickup point",
+        "dateDefaultOption": "Select a date",
+        "date": "Date",
+        "timeDefaultOption": "Choose a time",
+        "time": "Time",
+        "steps": {
+            "1": {
+                "title": "Time & location"
+            },
+            "2": {
+                "title": "Passengers data"
+            },
+            "3": {
+                "title": "Payment"
+            },
+            "4": {
+                "title": "Confirmation"
+            }
+        },
+        "continue": "Continue",
+        "continueTo": "Continue to",
+        "homepage": "homepage",
+        "payNow": "Pay now ",
+        "adults": "Adults *",
+        "kids": "Kids",
+        "infants": "Infants",
+        "name": "Name & surname *",
+        "email": "Email address *",
+        "phone": "Phone",
+        "accept": "I accept",
+        "terms": "Terms & Conditions *",
+        "from": "from",
+        "success": {
+            "mainTitle": "You’ve successfully booked",
+            "voucher": "Voucher is coming to your mailbox in 5 minutes",
+            "voucherB2b": "Print the voucher below",
+            "cancel": "You've canceled your order :/",
+            "privateInfo": "We will contact you soon.",
+            "privateRental": "Private rental"
+        },
+        "totalCapacity1": "Available capacity of this ride is",
+        "totalCapacity2": "Please adjust the number of passengers.",
+        "b2bFinish": "Finish order"
+    },
+    "terms": {
+        "title": "General business terms of Adriatic Sunsets d.o.o.",
+        "content": "<h2>Article 1</h2> <p> The General Business Terms of Adriatic Sunsets d.o.o. (hereinafter referred to as: the General Terms) regulate the relations between Adriatic Sunsets d.o.o., primarily as a service provider in the field of tour operators (hereinafter referred to as: the Service Provider), and natural and/or legal persons (hereinafter referred to as: the Client)  who are occasionally and/or permanently provided with services of tour operators and with additional services included in the Service Provider's offer. </p> <h2> Article 2 </h2> <p> Within the meaning of the General Terms the Service Provider is: </p> <p> Adriatic Sunsets d.o.o. <br /> Uz Glavičino 6<br /> Brašina (Municipality of Župa Dubrovačka)<br /> 20 207 Mlini <br /> Republic of Croatia<br /> Website: www.adriaticsunsets.com<br /> Account number: HR382360000110268732<br /> Personal Identification Number: 21242579244 </p> <p> The Service Provider is registered with the Company Register of the Commercial Court of Split, Permanent Bureau of Dubrovnik, under Company Registration Number 060291285. </p> <p> In the provisions of the General Terms pertaining to the Croatian Consumer Protection Act the Service Provider is referred to as the Trader so as to follow the terminology of the Act. </p> <h2> Article 3 </h2> <p> Within the meaning of the General Terms the Client is every natural and/or legal person, resident or non-resident, with the capacity to bear rights and obligations, with whom the Service Provider, either directly or by way of an authorised legal representative or via the means of distant communication, pursuant to applicable provisions, concludes contractual relations, that is, who is provided with a service offered by the Service Provider, or a person who has asked for and received services by the Service Provider. In the provisions pertaining to the Croatian Consumer Protection Act, the Client is referred to as the Consumer so as to follow the terminology of the Act. </p> <p>The General Terms are applicable together with the individual contract if one is concluded between the Client and the Service Provider. If an individual contract differs from the provisions of the General Terms, the provisions of the contract are applicable.</p> <p>The booking system within the meaning of the General Terms is the booking system of Adriatic sunsets which enables Clients to book and pay for services (tours) via the Adriatic sunsets Internet Application. </p> <p>The service (Tour) contains: the service of booking a correspondent service, paying for the service, picking-up the Client at the arranged place, performing the service booked, helping with the performance of the service by way of enabling the use of another or an additional service if the Service Provider can provide such service.</p> <p>The offer of services is subject to change, depending on the market conditions and business needs. The Client can ask for and get an overview of the complete offer of services at any given time by written inquiry or by viewing the offer published on the Service Provider's website. </p> <p>The Service Provider shall provide the Client with accurate and complete information about the content and price of the service, including all taxes and other fees, the payment currency as well as all other costs which can influence the quoted price in any possible way, no later than at the moment of contracting the service.</p> <h2> Article 4 </h2> <p>The Service Provider reserves the right to hire additional co-operators, should the Service Provider not be able to provide the demanded service themselves directly and in time. An indirectly provided service must match the service directly provided by the Service Provider using their own resources in price and quality, and must not cause additional costs for the Client.</p> <p>The Client is aware of the fact that the Service Provider does not need to be the owner of all vehicles used for performing the service, nor do they need to be the owner, that is, the manager of the indirect performer of the service.</p> <p>In the event of a dispute between the Client and an indirect performer of services, when services are provided indirectly via hiring additional co-operators, the Service Provider shall undertake all reasonable efforts to resolve the dispute peacefully and to the satisfaction of both parties.</p> <p>The Client is aware that the information presented in the booking system can be changed or renewed. </p> <h2>Article 5 </h2> <p>The Client agrees that the Service Provider:  &bull; is not liable for inaccessibility of the booking system due to system errors, maintenance, repairs or other objective reasons,</p> <h2>Article 6 </h2> <p>The Client agrees that the cost of the service contains the cost of the service, administrative and other costs the Service Provider is required to cover pursuant to compulsory provisions of their country of operation.</p> <p>The Client agrees that the service contract shall be concluded via the Adriatic Sunsets booking system or in a different manner confirmed in writing by e-mail.</p> <p>The Service Provider agrees that a booking can be cancelled under the following conditions:  &bull; upon notifying the Service Provider at least 24 hours prior to service provision with a complete refund of payments made,  &bull; upon notifying the Service Provider at least 12 hours prior to service provision with a 50%-refund of payments made,  &bull; upon notifying the Service Provider within less than 12 hours prior to service provision without any refund of payments made.</p> <h2>Article 7 </h2> <p>The Client shall use the booking system according to its purpose.</p> <p>Any behaviour of the Client intended to make false reservations, to disable the use of the booking system or to impede it, as well as market research activities without the intention of concluding a service contract is prohibited. In case of such behaviour by the Client, the Client is liable for the Service Provider's and their co-operator's damages resulting from such actions of the Client.</p> <h2>Article 8 </h2> <p>The Service Provider shall collect and process the Client's personal data pursuant to provisions regulating the protection of personal data.</p> <p>The Client shall voluntarily provide the Service Provider with their personal data. </p> <p>The Client agrees that the Service Provider collects and processes the Client's personal data for the purpose of:  &bull; conducting regular business,  &bull; executing contracts in which the Client is a party,  &bull; executing the Service Provider's legal obligations. The Service Provider is entitled to provide a third person with the personal data of the Client only if that is necessary for the implementation of a contracted service or the realization of extra-contractual obligations arisen due to the contracted service.</p> <p>The Client is entitled to access to data collected in such manner and to the correction of data referring to the Client.</p> <p>The legal representative of the Service Provider manages the collection of personal data.</p> <p>The Service Provider is entitled to refuse business cooperation with a Client who refuses to consent to the processing of personal data necessary for establishing a business relationship.</p> <p>When establishing a business relationship, the Client shall provide the following data: first name, surname, address, e-mail address, credit card number.</p> <p>The Client is entitled to express the wish to be informed about other products and services provided by the Service Provider and their business partners and to consent to the usage of their first name, surname, address, e-mail address and telephone number for that purpose.</p> <p>The Service Provider is obliged to keep the confidentiality of all personal data of the Client and grant access to such data only to those employees of the Service Provider who need them to perform their work. All employees and business partners are responsible for respecting the privacy principle.</p> <h2>Article 9</h2> <p>Pursuant to Article 72 of the Croatian Consumer Protection Act the Client is entitled to unilateral termination of a service contract concluded outside the business premises or concluded at a distance within 14 days without having to give a reason. In case of conclusion of a sales contract the period mentioned in paragraph 1 of this Article starts with the day the Consumer or a third person determined by the Consumer who is not a carrier has come into possession of the goods subject to the contract. If the regular delivery of goods during a certain period has been contracted, the period mentioned in paragraph 1 of this Article starts with the day the Consumer or a third person determined by the Consumer who is not a carrier has come into possession of the first piece or the first delivery of goods. In the case of conclusion of a service contract the period mentioned in paragraph 1 of this Article starts with the day the contract is concluded. If the Trader has not informed the Consumer about their right to unilateral termination of the contract, the Consumer's right to unilateral contract termination expires 12 months after the termination deadline from Article 72 of the Croatian Consumer Protection Act. If the Trader has notified the Consumer of the right mentioned in the previous paragraph of this Article within 12 months of the deadlines determined in Article 72 of the Croatian Consumer Protection Act, the Consumer's right to unilateral contract termination from Article 72 of the Consumer Protection Act expires within14 days from the day the Consumer has received such notification. The Consumer shall inform the Trader about their decision to terminate the contract prior to expiration of the deadline for unilateral contract termination by way of a unilateral contract termination form or by way of any other unambiguous statement expressing the will to terminate the contract. The form and content of the form mentioned in the previous paragraph of this Article is stipulated by the Minister in charge of consumer protection by way of ordinance. If the Trader, on their website, allows for the possibility of unilateral contract termination by the Consumer, the Consumer can unilaterally terminate the contract by completing a unilateral contract termination form or any other unambiguous termination statement and sending it to the Trader electronically.  In the case mentioned in the previous paragraph of this Article the Trader shall, without delay, send a confirmation of the receipt of such termination statement in a durable medium. The Consumer shall send the contract termination statement prior to expiration of the deadline for contract termination provided for in Articles 72 and 73 of the Croatian Consumer Protection Act.  The Consumer shall prove that they have realized their right to unilateral contract termination pursuant to the provisions of this Article. If the Consumer exercises the right to unilateral contract termination from Article 72 of the Croatian Consumer Protection Act, the parties are not required to fulfil their obligations from the contract concluded outside business premises or from the distance contract, respectively, if the offer to conclude a contract was made by the Consumer, the parties are not obliged to conclude a contract. In the event of contract termination, every party is required to return to the other party what they have received on the basis of the contract, pursuant to the provisions of this Article. The Consumer is not required to cover expenses which might result from exercising the right to unilateral contract termination from Article 72 of the Croatian Consumer Protection Act, except for those provided for in the following paragraphs of the General Terms. If the Consumer exercises the right to unilateral contract termination from Article 72 of the Croatian Consumer Protection Act, the Trader shall, without delay and no later than within 14 days from the day of receiving notification of the Consumer's decision to terminate the contract, pursuant to Article 74 of the Croatian Consumer Protection Act, refund to the Consumer everything they have paid on the basis of the contract. By way of derogation from the previous paragraph of this Article, the trader is not required to refund additional costs resulting from the Consumer's explicit choice of a type of transport different from the cheapest type of standard transport offered by the Trader. The Trader shall refund payments made using the same means of payment used by the Consumer, except if the Consumer explicitly agrees to another means of payment, and provided that the Consumer will not be required to cover any other additional costs for such refund. Unless the Trader has offered to be the one to take over the goods the Consumer is returning, the Consumer is required to return the goods without delay and no later than within 14 days of the day they notified the Trader, pursuant to Article 74 of the Croatian Consumer Protection Act, about their decision to terminate the contract. The Consumer is deemed to have duly fulfilled their obligation from the previous paragraph of this Article if they send the goods before the deadline from the previous paragraph of this Article or hand it over to the Trader, that is, the person authorised by the Trader to receive the goods. The Consumer shall only bear the direct costs of returning goods unless the Trader has agreed to bear these costs or if the Trader has neglected to inform the Consumer that they are required to bear these costs. If, in case of a contract concluded outside business premises, at the moment of contract conclusion the goods were delivered to the Consumer's home, the Trader shall take over the goods at their own expense if, because of the nature of the goods, it is not possible to return them via regular mail. The Consumer is liable for every decrease in value of the goods resulting from handling them, except for the handling necessary to identify the nature, features and functionalities of the goods. By way of derogation from the previous paragraph of this Article, if the Trader has not informed the Consumer of their right to unilateral contract termination pursuant to Article 57, item 8 of the Croatian Consumer Protection Act, the Consumer is not liable for a decrease in value of the goods, whatever the cause for such decrease in value might be. In case of unilateral contract termination by the Consumer pursuant to Articles 64 and 70 of the Croatian Consumer Protection Act after having explicitly demanded the provision of services before expiration of the deadline for unilateral contract termination, the Consumer shall pay the Trader part of the contracted price proportional to what the Trader provided for the Consumer up until the moment when the Consumer informed the Trader about their exercising the right to unilateral contract termination, the proportional amount of the price due to be paid by the Consumer thereby being calculated on the basis of the contracted total price, and should this price be excessive, on the basis of the market value of what was provided for the Consumer by the Trader. In case of unilateral service contract termination the Consumer shall not be required to pay for a part of the price proportional to what was provided for the Consumer by the Trader during the period before expiration of the deadline for unilateral contract termination if the Trader did not deliver the notifications provided for by the provisions of Article 57, paragraph 1, items 8 and 10 of the Croatian Consumer Protection Act, and respectively if the Consumer has not, pursuant to Articles 64 and 70 of the Croatian Consumer Protection Act, explicitly demanded services to be provided before expiration of the deadline for unilateral contract termination. If the consumer unilaterally terminates the contract pursuant to the provisions of this Article, all other connected contracts shall be terminated, and without any costs for the Consumer except for the ones provided for by the provisions of this Article. The Consumer is not entitled to unilateral contract termination from this Article if: 1.the service contract has been completely fulfilled by the Trader and fulfilment started with the explicit consent of the Consumer and their confirmation to be familiar with the fact that they will lose the right to unilateral contract termination from this article if the service will be provided in full., 2. goods or services whose price depends on changes on the financial market which the Trader is unable to influence, and which can occur during the period in which the Consumer is entitled to unilateral contract termination, are the subject of the contract, 3. goods which are tailor-made for the Consumer or which are clearly adapted to the Consumer are the subject of the contract, 4. the Consumer has specifically demanded the Trader's visit for the purpose of emergency repairs or maintenance work, but if, in the event of such visit, apart from the services that the Consumer has explicitly demanded, the Trader provides other services, that is, delivers other goods besides the ones necessary for performing emergency repairs and maintenance work, the Consumer is entitled to unilateral contract termination related to such additional services or goods. 5. accommodation services which are not aimed at permanent housing, services of transporting goods, services of renting vehicles, services of delivery of food and beverages or services related to leisure are subject of the contract, if such services were contracted to be delivered at a specific date or during a specific period. Pursuant to Article 8 of the Croatian Consumer Protection Act the Client is authorised to submit a written complaint in the business premises of the Service provider at Adriatic Sunsets d.o.o. Uz Glavi&#269;ino 6, Bra&#353;ina (&#381;upa Dubrova&#269;ka) 20207 Mlini or via mail to the same address, or via fax to the telefax number +38520356555 or via e-mail to hello@adriaticsunsets.com. The Service Provider is required to confirm the receipt of such complaint in writing without delay and to respond to the complaint received within 15 days from the day the complaint has been received.</p> <p>In case of a dispute between the Client and the Service Provider the competent court is the court with subject-matter jurisdiction in Dubrovnik.</p> <h2>Article 10</h2> <p>Security of Online Payments While conducting payments on our web shop you are using CorvusPay &ndash; an advanced system for secure acceptance of credit cards on the Internet. CorvusPay ensures complete privacy of your credit card data from the moment you type them into the CorvusPay payment form. Data required for billing is forwarded encrypted from your web browser to the bank that issued your payment card. Our store never comes into contact with your sensitive payment card data. Similarly, CorvusPay operators cannot access your complete cardholder data. An isolated system core independently transmits and manages sensitive data while at the same time keeping it completely safe. The form for entering payment data is secured by an SSL transmission cipher of the greatest reliability. All stored data is additionally protected by hi-grade encryption, using hardware devices certified by FIPS 140 2 Level 3 standard. CorvusPay fulfills all of the requirements for safe online payment prescribed by the leading credit card brands, operating in compliance to the PCI DSS Level 1 standard - the highest security standard of the payment card industry. Payments made by cards enroled with the 3-D Secure program are further authenticated by the issuing bank, confirming your identity through the use of a token or a password. All information collected by Corvus Info is considered a banking secret and treated accordingly. The information is used exclusively for the purposes for which they were intended. Your sensitive data is fully secure and it&rsquo;s privacy is guaranteed by the state of the art safeguard mechanisms. We collect only the data necessary for performing the work in accordance with the demanding prescribed procedures for online payment. Security controls and operating procedures applied within the CorvusPay infrastructure not only ensure current reliability of CorvusPay but permanently maintain and enhance the security levels of protecting your credit card information by maintaining strict access controls, regular security and in-depth system checks for preventing network vulnerabilities. Thank you for using CorvusPay!</p> <h2>Article 11</h2> <p>The Trader shall fulfil the contract pursuant to the provisions of the contract, the Croatian Consumer Protection Act and the Croatian Civil Obligations Act. In case of a material defect of a product the relationship between Consumer and Trader is subject to the provisions of the Croatian Civil Obligations Act on liability for material defects of a thing. If the Trader or producer has given a warranty of the propriety of a product sold, they shall fulfil the obligations stipulated by the Croatian Civil Obligations Act on warranty for the quality of a sold thing as well as the obligations taken on with the warranty. A defect of a product, if necessary, shall be proven by obtaining expert opinion from authorised institutions or with the help of an authorised expert witness. If a product defect arises within six months from the day of the transfer of risk onto the Consumer, and if the Trader deems the defect not to have existed at the time, the Trader shall bear the cost of obtaining expert opinion. If a product defect arises after expiration of the period from the previous paragraph, but no later than 24 months from the day of transfer of risk onto the Consumer, the costs for obtaining expert opinion shall be borne by the Consumer or the Trader, depending on the outcome of the expertise. Article 12</p> <p>When making payments via our booking system (webshop), you shall use CorvusPay - an advanced system for the secure acceptance of card payments via the Internet. CorvusPay ensures complete confidentiality of your card details from the very moment you enter them into the CorvusPay payment form. The payment data are forwarded in encoded form from your web browser to the bank that issued your card. Our shop never comes into contact with the complete details of your payment card. Even to the employees of the CorvusPay system the card details are also inaccessible. The isolated core independently transfers and manages sensitive data keeping them completely secure.  The form for entering payment data is secured by an SSL transport code of the highest reliability. All data stored are additionally protected by encodings, using cryptographic devices certified according to the FIPS 140-2 Level 3 standard.&#160;CorvusPay meets all the requirements related to the security of online payments stipulated by the leading card brands, and respectively operates pursuant to the PCI DSS Level 1 Norm - the highest security standard of the payment card industry. For payments made by cards enrolled in the 3-D Secure Programme your bank, apart from confirming the validity of your card, also confirms your identity with the help of a token or password. CorvusInfo considers all information collected a bank secret and treats it accordingly. The information is used exclusively for the purpose intended. Your sensitive data are completely safe and their privacy is guaranteed by cutting-edge protection mechanisms. Only the data necessary to perform tasks pursuant to stipulated demanding online payment procedures are used. Security checks and operating procedures applicable to our infrastructure ensure momentary reliability of the CorvusPay system. In addition, by maintaining strict access control, regularly monitoring security and screening the network to prevent vulnerability as well as systematically implementing the provisions on information security the security level of protecting your card details is permanently maintained and upgraded.</p> <h2>Article 13 Conversion statement</h2> <p>All payments will be effected in Croatian currency. The charged amount on your credit card account is converted into your local currency according to the exchange rate of credit card associations.</p> <h2> Article 14 GDPR </h2> <p>Adriatic Sunsets obavezuje se pru&#382;ati za&#353;titu osobnim podacima kupaca, na na&#269;in da prikuplja samo nu&#382;ne, osnovne podatke o kupcima/ korisnicima koji su nu&#382;ni za ispunjenje na&#353;ih obveza; informira kupce o na&#269;inu kori&#353;tenja prikupljenih podataka, redovito daje kupcima mogu&#263;nost izbora o upotrebi njihovih podataka, uklju&#269;uju&#263;i mogu&#263;nost odluke &#382;ele li ili ne da se njihovo ime ukloni s lista koje se koriste za marketin&#353;ke kampanje. Svi se podaci o korisnicima strogo &#269;uvaju i dostupni su samo djelatnicima kojima su ti podaci nu&#382;ni za obavljanje posla. Svi djelatnici Adriatic Sunsets i poslovni partneri odgovorni su za po&#353;tivanje na&#269;ela za&#353;tite privatnosti.</p> <p>The Service Provider is obliged to provide full protection of personal data of its clients in order to collect only basic data of its clients which are necessary for the fulfilment of our obligations; is obliged to inform the clients of the way collected data are used, giving them the option to include/exclude their name from the marketing campaign list. All clients data are strictly kept and are only available to employees who needs the data to fulfil their job obligations. All Adriatic Sunsets employees and business partners are responsible for compliance with privacy policy. </p> <h2> Article 15</h2> <p>The General Terms enter into force at the moment of their publication.</p><h2>Privacy Policy</h2><p>Adriatic Sunsets obliges to protect the personal data of its Clients by collecting only the basic information about the Clients, the one essential to the fulfillment of our business obligations; by informing the Clients about the purpose and the way of use of the data, and regularly ensuring the Clients can choose how they want their data used, including the option to be removed from our marketing campaign contact lists. All the data about our Clients is strictly confidential and strictly guarded and accessible only by the employees who need to use it to perform a certain task. All the employees of Adriatic Sunsets and business partners are required to respect the principles of privacy protection (as set out in GDPR).</p><h2>Conversion Statement</h2><p>All payments will be effected in Croatian currency. The charged amount on your credit card account is converted into your local currency according to the exchange rate of credit card associations.</p>"
+    },
+    "about": {
+        "title": "About Us",
+        "content": "<p>Adriatic Sunsets is a sister company of Adriatic Transfers, a longstanding chauffeur and transportation service provider in Dubrovnik region and Croatia. Over the many kilometers under our tires, we became the masters of sun gazing and great roadside stops, which we thought would be well worth sharing with you. The breaks in our drives were the inspiration behind Adriatic Sunsets panoramic rides. </p><p>As we always want to deliver only the best of experiences, we teamed up with Mercedes Benz for their Caleche Sprinters. These deluxe vehicles are completely unique in Croatia and combine ultimate comfort with unique sightseeing moments. As we always say – enjoy the ride, love the views!</p>"
+    },
+    "faq": {
+        "title": "FAQ",
+        "content": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae incidunt eaque assumenda sunt sequi ad reprehenderit ipsum dolorem provident error, fugiat enim. Reiciendis nostrum quo quis illum dolorem ex vel.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae incidunt eaque assumenda sunt sequi ad reprehenderit ipsum dolorem provident error, fugiat enim. Reiciendis nostrum quo quis illum dolorem ex vel.</p>"
+    },
+    "auth": {
+        "login": {
+            "title": "Login",
+            "username": "Username",
+            "password": "Password",
+            "action": "Login"
+        },
+        "logout": "logout",
+        "userMenu": "Open user menu",
+        "links": {
+            "admin": "Admin",
+            "orders": "Orders"
+        }
+    },
+    "admin": {
+        "reportsFor": "Sales report for",
+        "reports": {
+            "seller": "Seller",
+            "price": "Price",
+            "tours": "Tours",
+            "total": "Total"
+        },
+        "orders": {
+            "title": "Your orders",
+            "buyer": "Buyer",
+            "tour": "Tour",
+            "pickupPoint": "Pickup point",
+            "cancel": "Cancel"
+        }
+    }
+}

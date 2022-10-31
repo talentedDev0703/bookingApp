@@ -1,0 +1,22 @@
+@mixin vertical-rhythm($font-size, $bottom-rows: 1, $top-rows: 0, $use-height: false, $border: 0rem) {
+  // I use a rem function that enables me to pass in the $font-size and $border
+  // as rems or px, and the result of the function will give me rems
+  $font-size: rem($font-size);
+  $border: rem($border);
+  $multiplier: ceil($font-size / $line-height-base);
+
+  // check if height-based element
+  // if so use height property for height, otherwise use line-height property
+  @if $use-height {
+    $leftover:      $line-height-base * $multiplier - $font-size;
+    height:         $font-size;
+    margin-top:     $line-height-base * $top-rows + $leftover / 2;
+    margin-bottom:  $line-height-base * $bottom-rows + $leftover / 2;
+  }
+  @else { // text based element (uses line-height)
+    font-size:      $font-size;
+    line-height:    $line-height-base * $multiplier;
+    margin-top:     $line-height-base * $top-rows;
+    margin-bottom:  $line-height-base * $bottom-rows - $border;
+  }
+}

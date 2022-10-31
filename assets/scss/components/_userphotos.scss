@@ -1,0 +1,88 @@
+.Userphotos {
+
+    @include rem((
+        padding: 40px 0,
+        margin-top: 30px
+    ));
+
+    @include mq(900px) {
+        background-image: url(#{$image-path}/vector/bg/clouds.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% auto;
+        @include rem((
+            padding: 80px 0
+        ));
+    }
+
+
+    &-title {
+
+        @include font-family(map-get($typography, bold));
+        color: map-deep-get($colors, black, 'color');
+        @include fluid( 'margin-bottom', 320px, 1200px, 1px, 70px);
+
+        @include mq(900px) {
+            text-align: center;
+            @include font-family(map-get($typography, mustardo));
+        }
+    }
+
+    &-holder {
+        @include mq(900px) {
+            display: block;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    &-description {
+        color: rgba(map-deep-get($colors, black, 'color'), 0.3);
+        @include fluid('font-size', 320px, 1100px, 14px, 18px);
+        @include fluid( 'margin-bottom', 320px, 1200px, 1px, 20px);
+
+        @include mq(900px) {
+            text-align: center;
+            color: map-deep-get($colors, black, 'color');
+        }
+    }
+
+    &-container {
+        text-align: center;
+    }
+
+    &-photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        div {
+            flex-basis: 50%;
+            max-width: 50%;
+
+            @include mq(600px) {
+                flex-basis: 33%;
+                max-width: 33%;
+            }
+
+            a {
+                display: block;
+                padding: 10px;
+                transition: transform 0.3s ease;
+                backface-visibility: hidden;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+            }
+
+            img {
+                border-radius: 5px;
+                overflow: hidden;
+                display: block;
+            }
+        }
+    }
+
+}

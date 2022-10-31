@@ -1,0 +1,28 @@
+[05-Jul-2018 12:48:06 Europe/Zagreb] PHP Fatal error:  Cannot redeclare class FPDF in /home/adriaticsunsets/public_html/booking/vendor/fpdf181/fpdf.php on line 13
+[06-Jul-2018 21:18:06 Europe/Zagreb] PHP Warning:  DateTime::setTimestamp() expects parameter 1 to be long, string given in /home/adriaticsunsets/public_html/booking/b2b-orders.php on line 10
+[06-Jul-2018 21:18:12 Europe/Zagreb] PHP Warning:  DateTime::setTimestamp() expects parameter 1 to be long, string given in /home/adriaticsunsets/public_html/booking/b2b-orders.php on line 10
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'id' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 55
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'tours' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 63
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'value' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 67
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'id' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 55
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'tours' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 63
+[14-Aug-2018 22:14:15 Europe/Zagreb] PHP Warning:  Illegal string offset 'value' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 67
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'id' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 55
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'tours' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 63
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'value' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 67
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'id' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 55
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'tours' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 63
+[14-Aug-2018 22:14:17 Europe/Zagreb] PHP Warning:  Illegal string offset 'value' in /home/adriaticsunsets/public_html/booking/b2b-report.php on line 67
+[18-Aug-2018 04:29:31 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[18-Aug-2018 04:29:31 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[08-Oct-2018 22:36:13 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[08-Oct-2018 22:36:13 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[08-Oct-2018 22:36:14 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[08-Oct-2018 22:36:15 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[12-Nov-2018 09:19:06 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[15-Apr-2019 07:42:46 Europe/Zagreb] PHP Warning:  Invalid argument supplied for foreach() in /home/adriaticsunsets/public_html/booking/success.php on line 348
+[03-Jun-2019 10:20:22 Europe/Zagreb] PHP Warning:  Invalid argument supplied for foreach() in /home/adriaticsunsets/public_html/booking/success.php on line 348
+[03-Jun-2019 10:21:15 Europe/Zagreb] PHP Warning:  Invalid argument supplied for foreach() in /home/adriaticsunsets/public_html/booking/success.php on line 348
+[07-Jun-2019 12:09:21 Europe/Zagreb] PHP Warning:  Invalid argument supplied for foreach() in /home/adriaticsunsets/public_html/booking/success.php on line 366
+[19-May-2022 02:11:19 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (08004/1040): Too many connections in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11
+[19-May-2022 02:11:28 Europe/Zagreb] PHP Warning:  mysqli::mysqli(): (HY000/1040): Too many connections in /home/adriaticsunsets/public_html/booking/next-tour.php on line 11

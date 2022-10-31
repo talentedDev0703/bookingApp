@@ -1,0 +1,27 @@
+2019.07.01 09:16:32	*** repo:push #27130a6a-edc8-4906-a42a-1b8cefa13635 (Bitbucket-Webhooks/2.0)
+2019.07.01 09:16:32	remote addr: 18.234.32.226
+2019.07.01 09:16:32	Valid payload was received
+2019.07.01 09:16:32	Changes in branch 'master' was fetched
+2019.07.01 09:16:32	CONFIG: Array
+(
+    [gitCommand] => /usr/local/cpanel/3rdparty/lib/path-bin/git
+    [repositoriesPath] => /home/adriaticsunsets
+    [log] => 1
+    [logFile] => deploy.log
+    [logClear] => 1
+    [verbose] => 1
+    [folderMode] => 448
+)
+
+2019.07.01 09:16:32	REPO: nevenduranec/as
+2019.07.01 09:16:32	repoPath: /home/adriaticsunsets/as.git
+2019.07.01 09:16:32	BRANCHES: Array
+(
+    [0] => master
+)
+
+2019.07.01 09:16:32	Fetching repository 'nevenduranec/as'
+2019.07.01 09:16:32	cmd: cd /home/adriaticsunsets/as.git && /usr/local/cpanel/3rdparty/lib/path-bin/git fetch
+2019.07.01 09:16:37	cmd: cd /home/adriaticsunsets/as.git && GIT_WORK_TREE=/home/adriaticsunsets/www/app /usr/local/cpanel/3rdparty/lib/path-bin/git checkout -f master
+2019.07.01 09:16:37	cmd: cd /home/adriaticsunsets/as.git && /usr/local/cpanel/3rdparty/lib/path-bin/git rev-parse --short master
+2019.07.01 09:16:38	Branch 'master' was deployed in '/home/adriaticsunsets/www/app', commit #c211b83

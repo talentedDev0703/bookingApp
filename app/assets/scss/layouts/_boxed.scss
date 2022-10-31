@@ -1,0 +1,86 @@
+html.is-boxed-layout {
+    background-image: linear-gradient(-46deg, #ee3135 0%, #fbb040 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+
+    body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.BoxedLayout {
+    @include rem(
+        (
+            padding: 40px 0,
+        )
+    );
+
+    @include mq(900px) {
+        @include rem(
+            (
+                padding: 80px 0,
+            )
+        );
+    }
+
+    &-siteTitle {
+        text-align: center;
+        color: map-deep-get($colors, white, 'color');
+        @include font-family(map-get($typography, mustardo));
+        @include fluid('font-size', 320px, 1100px, 33px, 58px);
+
+        a {
+            color: map-deep-get($colors, white, 'color');
+        }
+    }
+
+    &-mainTitle {
+        text-align: center;
+        color: map-deep-get($colors, black, 'color');
+        @include font-family(map-get($typography, regular));
+        @include fluid('font-size', 320px, 1100px, 26px, 36px);
+
+        span {
+            @include font-family(map-get($typography, bold));
+        }
+    }
+
+    &-subTitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &-main {
+        width: 100%;
+        max-width: 1000px;
+        margin-top: 70px;
+        background-color: map-deep-get($colors, white, 'color');
+        box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
+        @include fluid('padding-left', 320px, 1100px, 20px, 250px);
+        @include fluid('padding-right', 320px, 1100px, 20px, 250px);
+        @include fluid('padding-top', 320px, 1100px, 20px, 120px);
+        @include fluid('padding-bottom', 320px, 1100px, 20px, 120px);
+
+        .Orders & {
+            @include fluid('padding-left', 320px, 1100px, 20px, 150px);
+            @include fluid('padding-right', 320px, 1100px, 20px, 150px);
+            max-width: 1500px;
+        }
+    }
+
+    &-back {
+        text-align: center;
+        opacity: 0.8;
+        font-size: 23px;
+        margin-top: 70px;
+        a {
+            @include font-family(map-get($typography, bold));
+            color: map-deep-get($colors, gray, 'color');
+            border-bottom: map-deep-get($colors, orange, 'color') 1px solid;
+        }
+    }
+}

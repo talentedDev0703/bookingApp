@@ -1,0 +1,11 @@
+#Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Origin http://localhost:3000
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type, authorization"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+Header set Access-Control-Allow-Credentials true
+
+Options +MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

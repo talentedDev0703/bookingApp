@@ -1,0 +1,278 @@
+.About {
+    position: relative;
+    z-index: 2;
+    @include fluid('padding-top', 320px, 1100px, 20px, 100px);
+
+    @include mq(900px) {
+        background-image: url(#{$image-path}/vector/bg/tree.svg), linear-gradient(-46deg, #EE3135 0%, #FBB040 100%);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 20px;
+        @include font-family(map-get($typography, bold));
+
+        @include mq(900px) {
+            @include font-family(map-get($typography, mustardo));
+            color: map-deep-get($colors, white, 'color');
+        }
+    }
+
+    &-description {
+        color: map-deep-get($colors, slate, 'color');
+        @include fluid('font-size', 320px, 1100px, 16px, 18px);
+        @include fluid(
+            'margin-bottom', 320px, 1200px, 20px, 130px
+        );
+
+        @include mq(900px) {
+            text-align: center;
+            color: map-deep-get($colors, white, 'color');
+        }
+    }
+
+    &-svg {
+        display: none;
+        position: relative;
+
+        @include mq(900px) {
+            display: inline-block;
+            float: right;
+        }
+    }
+
+    &-holder {
+        position: relative;
+        @include mq(900px) {
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    &-birds {
+        display: none;
+
+        @include mq(900px) {
+            display: inline;
+        }
+
+        svg {
+            position: absolute;
+        }
+    }
+
+    &-bird1 {
+        top: -60px;
+        right: 80px;
+    }
+
+    &-bird2 {
+        top: 80px;
+        left: -60px;
+        transform: scale(0.8);
+    }
+
+    &-bird3 {
+        top: 30px;
+        left: -40px;
+        transform: scale(0.5);
+    }
+}
+
+.AboutList {
+
+    border-bottom: map-deep-get($colors, grayalt, 'color') 2px solid;
+
+    @include mq(900px) {
+        border-bottom: 0;
+        box-shadow: 0 8px 24px 0 rgba(0,0,0,0.05);
+    }
+
+    &-item {
+        @include mq(900px) {
+            display: flex;
+            background-color: map-deep-get($colors, white, 'color');
+
+            &:nth-child(odd){
+                flex-flow: row-reverse;
+            }
+        }
+    }
+
+    &-title {
+        @include fluid('font-size', 360px, 1100px, 16px, 28px);
+        @include font-family(map-get($typography, bold));
+
+        @include mq(900px) {
+            @include rem((
+                margin-bottom: 40px
+            ))
+        }
+
+        button {
+            position: relative;
+            border: 0;
+            border-top: map-deep-get($colors, grayalt, 'color') 2px solid;
+            color: map-deep-get($colors, gray, 'color');
+            background: transparent;
+            display: block;
+            width: 100%;
+            margin: 0;
+            font-size: inherit;
+            text-align: left;
+            @include font-family(map-get($typography, medium));
+            @include rem((
+                padding: 20px 50px 20px 0
+            ))
+
+
+            svg {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+
+            &[aria-expanded="true"] svg {
+                transform: translate(0, -50%) rotate(180deg);
+            }
+        }
+    }
+
+    &-content {
+        @include mq(900px) {
+            flex-basis: 50%;
+            align-self: center;
+            @include rem((
+                padding: 60px
+            ))
+        }
+    }
+
+    &-description {
+        border-top: map-deep-get($colors, grayalt, 'color') 1px solid;
+        @include rem((
+            padding: 20px 0
+        ))
+
+        @include mq(900px) {
+            color: map-deep-get($colors, slate, 'color');
+            border-top: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+    }
+
+    &-image {
+        display: none;
+
+        @include mq(900px) {
+            display: block;
+            flex-basis: 50%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+.Features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include rem((
+        padding: 40px 0
+    ));
+
+    @include mq(900px) {
+        background-image: url(#{$image-path}/vector/bg/dots.svg), url(#{$image-path}/vector/bg/dots.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 33% 45%, 65% 45%;
+
+        @include rem((
+            padding: 130px 0
+        ));
+    }
+
+    &-icon {
+        display: block;
+        @include rem((
+            margin-bottom: 15px
+        ));
+
+        @include mq(900px) {
+            height: 100px;
+            @include rem((
+                margin-bottom: 30px
+            ));
+        }
+
+        svg {
+            width: 60px;
+            height: 60px;
+
+            @include mq(900px) {
+                width: 120px;
+                height: 120px;
+
+                > g {
+                    mask: url(#features-mask);
+                }
+
+                &.Features-wifi {
+                    rect {
+                        fill: map-deep-get($colors, white, 'color');
+                    }
+
+                    g {
+                        stroke: map-deep-get($colors, red, 'color');
+                    }
+                }
+
+                &.Features-air {
+                    rect {
+                        fill: map-deep-get($colors, white, 'color');
+                    }
+
+                    path {
+                        fill: map-deep-get($colors, red, 'color');
+                    }
+                }
+
+                &.Features-usb {
+                    rect {
+                        fill: map-deep-get($colors, white, 'color');
+                    }
+
+                    path {
+                        fill: map-deep-get($colors, red, 'color');
+                    }
+                }
+            }
+        }
+    }
+
+
+    li {
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 9999px;
+        @include fluid('font-size', 360px, 1100px, 14px, 16px);
+        @include font-family(map-get($typography, medium));
+
+        @include mq(900px) {
+            @include font-family(map-get($typography, bold));
+            color: map-deep-get($colors, white, 'color');
+            letter-spacing: 3px;
+            word-spacing: initial;
+        }
+    }
+}

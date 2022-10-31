@@ -1,0 +1,83 @@
+label {
+    text-transform: uppercase;
+    @include font-family(map-get($typography, medium));
+    font-size: 16px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
+    display: block;
+    @include mq(600px) {
+        letter-spacing: 3px;
+    }
+    .has-error & {
+        color: map-deep-get($colors, negative, 'color');
+    }
+    .is-terms & {
+        letter-spacing: 0;
+        @include font-family(map-get($typography, regular));
+        margin-bottom: 0;
+        text-transform: initial;
+    }
+}
+
+select,
+input,
+textarea {
+    @include font-family(map-get($typography, regular));
+    @include fluid( 'font-size', 320px, 1100px, 18px, 24px);
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+    border: map-deep-get($colors, gray2, 'color') 1px solid;
+    color: map-deep-get($colors, gray, 'color');
+    border-radius: 2px;
+    &[disabled] {
+        opacity: 0.5;
+    }
+    &[disabled]+svg {
+        opacity: 0.5;
+    }
+    .has-error & {
+        border-color: map-deep-get($colors, negative, 'color');
+    }
+    &[type="checkbox"],
+    &[type="radio"] {
+        width: auto;
+        padding: 0;
+        display: inline;
+    }
+}
+
+select {
+    appearance: none;
+}
+
+.Field {
+    margin-bottom: 30px;
+    &-holder {
+        position: relative;
+        svg {
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 20px;
+        }
+    }
+    &-error {
+        display: block;
+        text-align: right;
+        line-height: 1.8;
+        color: map-deep-get($colors, negative, 'color');
+    }
+    &-group {
+        display: flex;
+        justify-content: space-between;
+        .Field {
+            flex-basis: 30%;
+            max-width: 30%;
+        }
+    }
+    &.is-terms {
+        margin: 0;
+    }
+}

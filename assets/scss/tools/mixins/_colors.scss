@@ -1,0 +1,45 @@
+/**
+ * Generate utility classes for colors
+ *
+ */
+@mixin generate-colors ($colors) {
+    @each $name, $color in $colors {
+    	$modifiers : ();
+    	@if type-of($color) == map {
+    		$c : map-get($color, color);
+    		$modifiers : map-get($color, modifiers);
+    		$classes : map-get($color, classes);
+
+    			@if $classes == true or in-list($classes, color c) {
+    				.u-c-#{$name} {
+    					color: $c !important;
+    				}
+    			}
+    			@if $classes == true or in-list($classes, background-color background bkg) {
+    				.u-bg-#{$name} {
+    					background-color: $c !important;
+    				}
+    			}
+    			// modifiers
+    			@if $modifiers {
+    				@each $mod-name, $mod in $modifiers {
+
+    					@if $classes == true or in-list($classes, color c) {
+    						.u-c-#{$name}--#{$mod-name} {
+    							color: #{$mod} !important;
+    						}
+    					}
+    					@if $classes == true or in-list($classes, background-color background bkg) {
+    						.u-bg-#{$name}--#{$mod-name} {
+    							background-color: $mod !important;
+    						}
+    						.u-bg-#{$name}:hover {
+    							background-color: $mod !important;
+    						}
+    					}
+    				}
+    			}
+
+    	}
+    }
+}

@@ -1,0 +1,14 @@
+<svg
+    width="120"
+    height="120"
+    viewBox="0 0 120 120"
+    xmlns="http://www.w3.org/2000/svg"
+    class="Features-usb"><g
+        fill="none"
+        fill-rule="evenodd"><rect
+            fill="url(#features-gradient)"
+            width="120"
+            height="120"
+            rx="60"/><g
+                fill="#fff"
+                fill-rule="nonzero"><path d="M97 49.91h-6.206V41H30v34h60.794v-8.981H97v-16.11zM87.55 71.72H33.243V44.208H87.62V71.72h-.07z"/><path d="M44.362 62.131H57.71v5.198c0 .499.565.855.99.57l18.15-12.39a.352.352 0 0 0-.212-.64H63.36V49.67c0-.499-.565-.855-.988-.57L44.15 61.42c-.282.214-.141.712.212.712z"/></g></g></svg>

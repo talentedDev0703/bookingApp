@@ -1,0 +1,20 @@
+/**
+ * Output `rem` units with `px` fallback.
+ *
+ * @link http://sassmeister.com/gist/7451284 Usage
+ *
+ * @param {Map} $properties
+ *
+ * @requires {function} rem
+ */
+@mixin rem($properties) {
+    @each $property, $value in $properties {
+        @if (type-of($value) == number and $value != 0) {
+            // Turn unitless values into pixels
+            $value: if(unitless($value), $value * 1px, $value);
+        }
+
+        #{$property}: $value;
+        #{$property}: rem($value);
+    }
+}

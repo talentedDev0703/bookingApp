@@ -1,0 +1,13 @@
+<svg
+    width="8"
+    height="7"
+    viewBox="0 0 8 7"
+    xmlns="http://www.w3.org/2000/svg">
+    <polyline
+        points="1266 97 1269 101 1272 97"
+        transform="translate(-1265 -96)"
+        stroke="#F7941E"
+        stroke-width="2"
+        fill="none"
+        fill-rule="evenodd" />
+</svg>

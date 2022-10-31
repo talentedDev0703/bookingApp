@@ -1,0 +1,401 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include rem((padding: 20px));
+}
+
+.Logo {
+    order: 1;
+    flex-basis: 100px;
+    @include mq(880px) {
+        flex-basis: 136px;
+    }
+}
+
+.LogoContainer {
+    width: 100%;
+    backface-visibility: hidden;
+
+    @include mq(880px) {
+        order: 1;
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    a {
+        display: block;
+        height: 0;
+        position: relative;
+        padding: 0;
+        @include ratio(100, 76);
+        overflow: hidden;
+        backface-visibility: hidden;
+
+        @include mq(880px) {
+            @include ratio(136, 106);
+        }
+    }
+}
+
+.MainNav {
+    order: 1;
+    @include mq(800px) {
+        order: 2;
+    }
+    &-list {
+        position: fixed;
+        background-color: map-deep-get($colors, white, color);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(0, -100%);
+        overflow-y: auto;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        z-index: 10;
+        transition: transform 0.2s ease-in-out;
+        @include mq(800px) {
+            position: relative;
+            display: block;
+            width: auto;
+            height: auto;
+            transform: translate(0, 0);
+            text-align: center;
+        }
+        &.is-flex {
+            display: flex;
+        }
+        &.is-active {
+            transform: translate(0, 0);
+        }
+        li {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            @include mq(800px) {
+                display: inline-block;
+                width: auto;
+                flex-grow: unset;
+            }
+        }
+        a {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            color: map-deep-get($colors, black, 'color');
+            position: relative;
+            background-color: map-deep-get($colors, white, 'color');
+            overflow: hidden;
+            border-bottom: transparent 2px solid;
+            @include rem((padding: 10px 0));
+            &::after {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: map-deep-get($colors, orange, 'color');
+                transition: transform 0.3s ease;
+                transform: scaleX(0) translate(0, 100%);
+                @include pseudo();
+            }
+            &.is-current,
+            &:hover {
+                color: map-deep-get($colors, orange, 'color');
+                &::after {
+                    transform: scaleX(1) translate(0, 0);
+                }
+            }
+            @include mq(800px) {
+                @include rem(( padding: 20px 15px));
+            }
+        }
+    }
+    &-toggle {
+        position: relative;
+        z-index: 11;
+        border: 0;
+        background: transparent;
+        @include rem(( padding: 20px));
+        @include mq(800px) {
+            display: none;
+        }
+        svg {
+            display: block;
+            overflow: visible;
+            #close {
+                transform: translate(3px, -2px);
+                opacity: 0;
+            }
+            g {
+                transition: opacity 0.3s ease;
+            }
+        }
+        &.is-active {
+            #close {
+                opacity: 1;
+            }
+            #open {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.LanguageSwitcher {
+    order: 3;
+    &-toggle {
+        border: 0;
+        font-size: 1rem;
+        display: block;
+        @include font-family(map-get($typography, regular));
+        background: transparent;
+    }
+    #language {
+        top: 100%;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        background-color: map-deep-get($colors, white, 'color');
+        border-radius: 5px;
+        z-index: 2;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        @include rem(( padding: 10px));
+        &::after {
+            @include pseudo();
+            @include css-triangle(map-deep-get($colors, orange, 'color'), up);
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+        button {
+            font-size: 1rem;
+            @include font-family(map-get($typography, regular));
+            margin-bottom: 5px;
+            background: transparent;
+        }
+    }
+    &-arrow {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    &-txt {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.Hero {
+    background-image: url(#{$image-path}/raster/hero-small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 146px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include rem(( padding: 20px));
+    padding-bottom: 0;
+    .NextTour {
+        display: block;
+        margin-top: 60px;
+    }
+    h1 {
+        width: 50%;
+        color: map-deep-get($colors, white, 'color');
+        line-height: 1;
+        padding-top: 80px;
+        @include font-family(map-get($typography, bold));
+        span {
+            @include font-family(map-get($typography, italic));
+        }
+    }
+    @include mq(900px) {
+        align-items: center;
+        justify-content: center;
+        background-image: url(#{$image-path}/raster/hero.jpg);
+        height: 0;
+        padding: 0;
+        padding-bottom: 41.25%;
+        min-height: 270px;
+
+
+        h1 {
+            padding-top: 0;
+            width: auto;
+            text-align: center;
+        }
+        .NextTour {
+            display: none;
+        }
+    }
+
+    .Tag {
+        background-image: url(#{$image-path}/vector/bg/tag.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: map-deep-get($colors, white, 'color');
+        width: 102px;
+        height: 111px;
+        @include rem(( font-size: 17px));
+        position: absolute;
+        top: 10%;
+        right: 0;
+        strong {
+            display: block;
+        }
+        span {
+            display: inline-block;
+            transform: rotate(20deg) translate(30px, 40px);
+            text-align: center;
+        }
+        z-index: 3;
+    }
+
+    &-content {
+        @include mq(900px) {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding-bottom: percentage(270/480);
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -13%);
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+}
+
+.NextTours {
+    display: none;
+    position: relative;
+    @include mq(900px) {
+        display: flex;
+        @include rem(( padding: 60px 0 60px 200px));
+    }
+    &-title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        font-size: 14px;
+        background-image: url(#{$image-path}/vector/bg/rectangle.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 145px;
+        height: 100px;
+        line-height: 100px;
+        padding-left: 25px;
+        text-transform: uppercase;
+        color: map-deep-get($colors, silver, 'color');
+    }
+    &-flickity {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.NextTour {
+    position: relative;
+    z-index: 1;
+    display: none;
+    color: map-deep-get($colors, white, 'color');
+    @include font-family(map-get($typography, medium));
+    margin-bottom: -1%;
+    @include mq(900px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
+        flex-flow: column;
+    }
+    @include mq(1100px) {
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    &-name {
+        position: relative;
+    }
+    &-subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        @include mq(900px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0, -100%);
+            color: map-deep-get($colors, steel, 'color');
+        }
+    }
+    &-title {
+        @include fluid('font-size', 320px, 1100px, 31px, 40px);
+        @include mq(900px) {
+            @include font-family(map-get($typography, bold));
+            color: map-deep-get($colors, gray, 'color');
+        }
+    }
+    &-info {
+        margin: 15px 0;
+        span {
+            @include fluid('font-size', 320px, 1100px, 14px, 28px);
+            text-transform: uppercase;
+            margin-right: 10px;
+            svg {
+                margin-right: 10px;
+                vertical-align: middle;
+                transform: scale(0.6);
+            }
+        }
+        @include mq(900px) {
+            margin: 20px 0;
+            color: map-deep-get($colors, gray, 'color');
+            @include font-family(map-get($typography, light));
+            span {
+                text-transform: capitalize;
+                svg {
+                    transform: scale(1);
+                }
+            }
+        }
+        @include mq(1200px) {
+            span {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+

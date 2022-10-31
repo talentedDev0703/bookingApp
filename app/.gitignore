@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+.DS_Store
+
+# pwa
+sw.*
+
+.htaccess
+tmp
+.vscode

@@ -1,0 +1,6 @@
+.Orders {
+    .is-cancelled td {
+        opacity: 0.5;
+        color: map-deep-get($colors, negative, color);
+    }
+}

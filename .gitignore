@@ -1,0 +1,4 @@
+/.nuxt
+/node_modules
+/cgi-bin
+/booking/vendor

@@ -1,0 +1,61 @@
+{
+    "name": "as",
+    "version": "1.0.0",
+    "description": "Adriatic Sunsets",
+    "author": "Neven Đuranec <neven.duranec@gmail.com>",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "dependencies": {
+        "@nuxtjs/axios": "^5.13.6",
+        "@nuxtjs/component-cache": "^1.1.6",
+        "@nuxtjs/google-tag-manager": "^2.3.2",
+        "@nuxtjs/pwa": "^2.6.0",
+        "cookie-universal-nuxt": "^2.1.5",
+        "cookieparser": "^0.1.0",
+        "express": "^4.18.1",
+        "flickity-as-nav-for": "^2.0.1",
+        "flickity-imagesloaded": "^2.0.0",
+        "fontfaceobserver": "^2.3.0",
+        "inclusive-menu-button": "^0.1.4",
+        "lazysizes": "^4.1.8",
+        "moment-locales-webpack-plugin": "^1.2.0",
+        "nuxt": "^1.4.5",
+        "nuxt-facebook-pixel-module": "^1.5.0",
+        "nuxt-validate": "^0.1.3",
+        "picturefill": "^3.0.3",
+        "sass-loader": "^7.3.1",
+        "sass-mq": "^4.0.2",
+        "svg-inline-loader": "^0.8.2",
+        "svg.js": "^2.7.1",
+        "vue-browser-geolocation": "^1.8.0",
+        "vue-flickity": "^1.2.1",
+        "vue-gtm": "^3.5.0",
+        "vue-i18n": "^7.8.1",
+        "vue-moment": "^4.1.0",
+        "vue-mq": "^0.2.1",
+        "vue-smooth-scroll": "^1.0.13",
+        "vue-youtube": "^1.4.0",
+        "vuejs-datepicker": "^1.6.2",
+        "vuex-persistedstate": "^2.7.1",
+        "xmldom": "^0.1.31"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.6",
+        "eslint": "^4.15.0",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-loader": "^1.7.1",
+        "eslint-plugin-vue": "^4.7.1",
+        "node-sass": "^4.14.1"
+    }
+}

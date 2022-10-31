@@ -1,0 +1,49 @@
+.Table {
+    margin: 50px 0;
+    table-layout: fixed;
+
+    @include mq(900px){
+        table-layout: auto;
+    }
+
+    thead {
+        border-bottom: map-deep-get($colors, gray2, color) 1px solid;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding: 20px;
+        display: block;
+
+        @include mq(600px){
+            display: table-cell;
+        }
+    }
+
+    tr:nth-child(even){
+        background-color: #F4F4F4;
+    }
+
+    th,
+    tfoot span {
+        @include font-family(map-get($typography, medium));
+        color: map-deep-get($colors, black, color);
+        opacity: 0.5;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    tfoot {
+        td {
+            border-top: map-deep-get($colors, gray2, color) 1px solid;
+        }
+
+        span {
+            margin-right: 50px;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+/* ====================================
+   Utilities
+   ==================================== */
+
+/*
+    Layout
+    ==================================== */
+
+.u-cf::before,
+.u-cf::after {
+    content: " ";
+    display: table;
+}
+
+.u-cf::after {
+    clear: both;
+}
+
+.u-nbfc {
+    overflow: hidden;
+}
+
+.u-nbfcAlt {
+    display: table-cell;
+    width: 10000px;
+}
+
+.u-pullLeft {
+    float: left !important;
+}
+
+.u-pullRight {
+    float: right !important;
+}
+
+.u-alignTop {
+    vertical-align: top !important;
+}
+
+.u-alignMiddle {
+    vertical-align: middle !important;
+}
+
+.u-alignBaseline {
+    vertical-align: baseline !important;
+}
+
+.u-alignBottom {
+    vertical-align: bottom !important;
+}
+
+/*
+    State
+    ==================================== */
+
+.u-isHidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.u-isHiddenVisually {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.u-isVisible {
+    visibility: visible;
+}
+
+.u-isInvisible {
+    visibility: hidden;
+}
+
+.u-isActionable {
+    cursor: pointer;
+}
+
+.u-isDraggable {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+
+    &:active {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
+}
+
+.u-isDisabled {
+    cursor: default;
+}
+
+.u-isLoading {
+    opacity: 0.6;
+}
+
+html.js .js-isHidden {
+    display: none;
+}
+
+/*
+    Text and Fonts
+    ==================================== */
+
+.u-textTruncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.u-textBreak {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.u-textUppercase {
+    text-transform: uppercase !important;
+}
+
+.u-textLowercase {
+    text-transform: lowercase !important;
+}
+
+.u-textUnderline {
+    text-decoration: underline !important;
+}
+
+.u-textReplace {
+    text-align: left;
+    text-indent: -100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font: 0/0 a;
+}
+
+.u-textRight {
+    text-align: right !important;
+}
+
+.u-textLeft {
+    text-align: left !important;
+}
+
+.u-keepSize {
+    max-width: none;
+}
+
+.\@TODO {
+    outline: hotpink 3px solid;
+    position: relative;
+
+    &::after {
+        content: '@TODO';
+        @include pseudo();
+        font-size: 15px;
+        color: hotpink;
+        top: 0;
+        right: 0;
+    }
+}
+
+[hidden] {
+    display: none;
+}
+
+.u-p-0 {
+    padding: 0 !important;
+}

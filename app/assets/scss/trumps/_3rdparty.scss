@@ -1,0 +1,10 @@
+[data-inclusive-menu] [data-inclusive-menu-from="right"] {
+    left: auto;
+    right: 0;
+}
+
+
+[data-inclusive-menu] [role^="menuitem"][aria-checked="true"]::before {
+    content: '\2713\0020';
+    color: map-deep-get($colors, orange, 'color');
+}

@@ -1,0 +1,51 @@
+html {
+    color: map-deep-get($colors, black, 'color');
+    background-color: map-deep-get($colors, white, 'color');
+}
+
+body {
+    @include font-family(map-get($typography, regular));
+}
+
+a {
+    color: map-deep-get($colors, blue, 'color');
+    text-decoration: none;
+    transition: color 0.3s ease;
+    backface-visibility: hidden;
+
+    &:hover {
+        color: map-deep-get($colors, blue, modifiers, 'dark');
+    }
+}
+
+::selection {
+    color: map-deep-get($colors, black, 'color');
+    background: map-deep-get($colors, yellow, 'color');
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+html.disable-scroll,
+html.disable-scroll body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}

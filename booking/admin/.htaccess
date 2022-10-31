@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Booking Management"
+AuthUserFile "/home/adriaticsunsets/.htpasswds/public_html/booking/admin/passwd"
+require valid-user

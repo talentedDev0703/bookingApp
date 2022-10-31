@@ -1,0 +1,118 @@
+.Booking {
+
+    &-form {
+        width: 100%;
+        max-width: 450px;
+        margin: 70px auto 0;
+
+        a {
+            @include font-family(map-get($typography, bold));
+            color: map-deep-get($colors, gray, 'color');
+            border-bottom: map-deep-get($colors, orange, 'color') 1px solid;
+        }
+    }
+
+    &-voucher {
+        display: block;
+        background-color: map-deep-get($colors, positive, 'color');
+        color: map-deep-get($colors, white, 'color');
+        padding: 40px 60px;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 24px;
+        border-radius: 3px;
+    }
+
+    &-cancel,
+    &-capacity {
+        padding: 40px 60px;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 24px;
+        border-radius: 3px;
+
+        &--warning {
+            background-color: map-deep-get($colors, negative, 'color');
+            color: map-deep-get($colors, white, 'color');
+            margin-top: 0;
+        }
+
+        &--info {
+            background-color: map-deep-get($colors, warn, 'color');
+            color: map-deep-get($colors, gray, 'color');
+            margin-top: 0;
+        }
+    }
+
+    &-footer {
+        margin-top: 20px;
+        padding-top: 20px;
+        max-width: 1000px;
+        width: 100%;
+        text-align: center;
+
+        a {
+            color: map-deep-get($colors, white, 'color');
+            text-decoration: underline;
+        }
+
+        .Cards {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: map-deep-get($colors, white, 'color') 1px solid;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            img {
+                display: inline-block;
+                height: 45px;
+                margin: 5px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.BookingProgress {
+    @include rem(
+        (
+            margin: 70px 0,
+        )
+    );
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include mq(400px) {
+            align-items: center;
+        }
+    }
+
+    li {
+        text-align: center;
+        width: 30%;
+    }
+
+    .is-line {
+        display: none;
+        position: relative;
+        height: 100%;
+        width: 20%;
+
+        &:after {
+            @include pseudo();
+            top: -17px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 1px;
+            background-color: map-deep-get($colors, white, 'color');
+            width: 200%;
+        }
+
+        @include mq(400px) {
+            display: block;
+        }
+    }
+}

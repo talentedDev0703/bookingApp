@@ -1,0 +1,40 @@
+<svg
+    width="23"
+    height="14"
+    viewBox="0 0 23 14"
+    xmlns="http://www.w3.org/2000/svg">
+    <g
+        fill="#FBB040"
+        fill-rule="evenodd"
+        id="open">
+        <rect
+            width="23"
+            height="2" />
+        <rect
+            y="12"
+            width="23"
+            height="2" />
+        <rect
+            y="6"
+            width="23"
+            height="2" />
+    </g>
+    <g
+        fill="#FBB040"
+        id="close">
+        <rect
+            id="Rectangle-12"
+            transform="translate(8.838835, 8.838835) rotate(-45.000000) translate(-8.838835, -8.838835) "
+            x="-2.66116524"
+            y="7.83883476"
+            width="23"
+            height="2"/>
+        <rect
+            id="Rectangle-12-Copy-9"
+            transform="translate(8.838835, 8.838835) rotate(45.000000) translate(-8.838835, -8.838835) "
+            x="-2.66116524"
+            y="7.83883476"
+            width="23"
+            height="2"/>
+    </g>
+</svg>

@@ -1,0 +1,124 @@
+.Gallery {
+    .container {
+        padding: 0;
+    }
+
+    @include mq(700px) {
+        margin-bottom: 40px;
+    }
+
+    @include mq(900px) {
+        .container {
+            padding: 0 10px;
+        }
+
+        @include rem((
+            padding: 90px 0 50px 0
+        ));
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 20px;
+        @include font-family(map-get($typography, bold));
+
+        @include mq(700px) {
+            @include font-family(map-get($typography, mustardo));
+        }
+    }
+
+    &-holder {
+        display: none;
+        position: relative;
+        @include mq(900px) {
+            display: block;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    &-description {
+        color: map-deep-get($colors, slate, 'color');
+        @include fluid('font-size', 320px, 1100px, 16px, 18px);
+        @include fluid(
+            'margin-bottom', 320px, 1200px, 20px, 50px
+        );
+
+        @include mq(900px) {
+            text-align: center;
+        }
+    }
+
+
+    &-main {
+        @include mq(700px) {
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &-cell {
+        width: 100%;
+    }
+
+    &-nav {
+        width: 220px;
+        height: 128px;
+        margin-right: 20px;
+
+        img {
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        &.is-selected {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-counter {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: map-deep-get($colors, white, 'color');
+        z-index: 2;
+        @include font-family(map-get($typography, bold));
+        font-size: 14px;
+    }
+
+    .flickity-button-icon {
+        transform: scale(4);
+        path {
+            stroke: map-deep-get($colors, white, 'color');
+            fill: none;
+            stroke-width: 2;
+        }
+    }
+
+    .flickity-prev-next-button {
+        border-radius: 0;
+        background: none;
+        display: none;
+
+        @include mq(900px) {
+            display: block;
+        }
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    .flickity-prev-next-button.next {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .flickity-prev-next-button.previous {
+        transform: translateY(-50%) rotate(-180deg);
+    }
+}

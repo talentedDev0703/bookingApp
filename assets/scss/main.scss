@@ -1,0 +1,88 @@
+/*
+    ====================================
+    Settings
+    ====================================
+*/
+
+@import 'settings/variables';
+@import 'settings/colors';
+@import 'settings/typography';
+
+/*
+    ====================================
+    Tools
+    - globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
+    ====================================
+*/
+
+@import 'tools/functions';
+@import 'tools/mixins';
+
+/*
+    ====================================
+    Generic
+    - reset
+    ====================================
+*/
+
+@import 'generic/reset';
+
+/*
+    ====================================
+    Base
+    ====================================
+*/
+
+@import 'sass-mq';
+@import 'base/base';
+@import 'base/fontface';
+@import 'base/typography';
+@include generate-typography($typography);
+@import 'base/icons';
+@import 'base/tables';
+
+/*
+    ====================================
+    Objects
+    ====================================
+*/
+
+@import 'objects/forms';
+@import 'objects/buttons';
+
+/*
+    ====================================
+    Components
+    ====================================
+*/
+
+@import 'components/header';
+@import 'components/about';
+@import 'components/gallery';
+@import 'components/roadmap';
+@import 'components/tours';
+@import 'components/userphotos';
+@import 'components/booking';
+@import 'components/footer';
+@import 'components/page';
+@import 'components/login';
+@import 'components/orders';
+
+/*
+    ====================================
+    Layouts
+    ====================================
+*/
+
+@import 'layouts/boxed';
+
+/*
+    ====================================
+    Trumps
+    - utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+    ====================================
+*/
+
+@include generate-colors($colors);
+@import 'trumps/utilities';
+@import 'trumps/3rdparty';

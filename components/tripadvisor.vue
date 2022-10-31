@@ -1,0 +1,22 @@
+<template>
+    <div
+        id="TA_cdswritereviewnew417"
+        class="TA_cdswritereviewnew">
+        <ul
+            id="ScRPWPb1"
+            class="TA_links sGds6Y7vq">
+            <li
+                id="dQtVMgCB0kD"
+                class="2AZui23">
+                <a
+                    target="_blank"
+                    href="https://www.tripadvisor.com/"><img
+                        src="https://www.tripadvisor.com/img/cdsi/img2/branding/medium-logo-29834-2.png"
+                        alt="TripAdvisor"></a>
+            </li>
+        </ul>
+        <script
+            async
+            src="https://www.jscache.com/wejs?wtype=cdswritereviewnew&amp;uniq=417&amp;locationId=14795629&amp;lang=en_US&amp;lang=en_US&amp;display_version=2"/>
+    </div>
+</template>

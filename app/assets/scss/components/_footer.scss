@@ -1,0 +1,121 @@
+.Footer {
+    @include fluid("font-size", 320px, 1100px, 15px, 16px);
+    text-align: center;
+
+    &-holder {
+        display: flex;
+        flex-direction: column;
+
+        @include rem(
+            (
+                padding: 30px 20px
+            )
+        );
+
+        @include mq(1100px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            @include rem(
+                (
+                    padding: 90px 20px
+                )
+            );
+        }
+    }
+
+    background-color: map-deep-get($colors, blackalt, "color");
+    color: rgba(map-deep-get($colors, white, "color"), 0.8);
+
+    a {
+        color: rgba(map-deep-get($colors, white, "color"), 0.8);
+        text-decoration: underline;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    &-sectionTitle {
+        @include font-family(map-get($typography, bold));
+        @include fluid("font-size", 320px, 1100px, 12px, 14px);
+        color: map-deep-get($colors, orange, "color");
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    &-section {
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @include mq(1100px) {
+            padding-bottom: 0;
+        }
+    }
+
+    &--sectionLogo {
+        display: none;
+        order: 2;
+
+        @include mq(1100px) {
+            display: block;
+            order: 1;
+        }
+
+        img {
+            max-width: 180px;
+        }
+
+        .Footer-copy {
+            margin-top: 20px;
+        }
+    }
+
+    &--sectionContact {
+        order: 2;
+
+        @include mq(1100px) {
+            order: 2;
+        }
+    }
+
+    &--sectionLinks {
+        order: 3;
+        @include mq(1100px) {
+            display: block;
+            order: 3;
+        }
+    }
+
+    &--sectionCopy {
+        order: 1;
+        padding-top: 30px;
+
+        @include mq(1100px) {
+            display: none;
+        }
+    }
+
+    &--sectionTripadvisor {
+        order: 4;
+
+        #TA_cdswritereviewnew417 {
+            text-align: center;
+
+            > div {
+                display: inline-block;
+            }
+        }
+
+        @include mq(1100px) {
+            order: 3;
+        }
+    }
+
+    &-copy {
+        color: rgba(map-deep-get($colors, white, "color"), 0.3);
+    }
+}

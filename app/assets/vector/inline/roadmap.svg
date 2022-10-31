@@ -1,0 +1,93 @@
+<svg width="1440px" height="959px" viewBox="0 0 1440 959" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="959"></rect>
+        <rect id="roadmappath-3" x="0" y="0" width="1440" height="959"></rect>
+        <linearGradient x1="-21.3126337%" y1="120.085656%" x2="81.4058008%" y2="12.5390758%" id="linearGradient-5">
+            <stop stop-color="#EE3135" offset="0%"></stop>
+            <stop stop-color="#FBB040" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <mask id="roadmapmask-4" fill="white">
+                <use xlink:href="#roadmappath-3"></use>
+            </mask>
+
+            <path d="M681,805 C653.770481,789.695556 635.437147,777.02889 626,767 C588.902558,727.576418 569.77813,687.702511 552,672 C527.438054,650.305692 504.771387,636.639025 484,631" id="Path-2" stroke="#7A1F08" stroke-width="1.5" opacity="0.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+            <path d="M279,591 C296.585732,597.259322 308.585732,601.925989 315,605 C349.749248,621.65343 370.104072,632.915716 386,636 C406.297206,639.938264 437.630539,637.938264 480,630" id="roadmapPath-3" stroke="#7A1F08" stroke-width="1.5" opacity="0.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+            <path d="M141,471 C144.272876,497.993358 154.272876,514.993358 171,522 C196.090687,532.509963 271.559379,516.603943 310.5,542 C322,549.5 356.363755,596.455946 387,612 C407.424163,622.362702 438.424163,627.696036 480,628" id="Path-7" stroke="#7A1F08" stroke-width="1.5" opacity="0.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+            <path d="M967,797 C1051,782.333333 1103.33333,755.333333 1124,716" id="Path-9" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+            <path d="M380,409 C372.734873,397.891455 367.234873,389.224788 363.5,383 C359.765127,376.775212 353.265127,362.775212 344,341" id="Path-10" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+            <path d="M480.937048,619.793032 C471.221697,560.279418 459.892721,519.641973 446.950119,497.880696 C419.661315,451.998173 365,406 384,400 C402.526403,394.149557 434.083274,377.382246 460,372.972671 C548,358 667.633914,329.232764 704.850933,329.002132 C753.211762,328.702441 806.037671,360.085663 852.794035,369.972671 C891.210827,378.096209 955.890755,368.229225 969.749055,380.964767 C1079.69739,482.005415 992.740018,584.147117 1056.71561,635.781535 C1140,703 1151.73541,799.610647 1139,828 C1091,935 880,802 838.154426,782.949747 C714.456571,726.636135 586.601922,652.142551 589,669 C593.980435,704.0103 676.24629,747.082097 739,768 C789,784.666667 770,796.333333 682,803" id="Path-8" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="6" mask="url(#roadmapmask-4)"></path>
+        </g>
+        <rect fill="#FFFFFF" x="468" y="618" width="24" height="24" rx="12"></rect>
+        <rect fill="#FFFFFF" x="374" y="402" width="14" height="14" rx="7"></rect>
+        <rect fill="#FFFFFF" x="1115" y="711" width="14" height="14" rx="7"></rect>
+        <g id="roadmapBosanka" class="point" transform="translate(935.000000, 708.000000)">
+            <rect fill="#FFFFFF" x="15" y="83" class="circle" width="14" height="14" rx="7"></rect>
+            <text id="Fotostop-Bosanka-59" font-family="hk_groteskbold" font-size="19" font-weight="bold" line-spacing="20" fill="#FFFFFF">
+                <tspan x="11" y="33">Fotostop</tspan>
+                <tspan x="11" y="53">Bosanka 59</tspan>
+            </text>
+            <text id="15-min" opacity="0.5" font-family="hk_groteskmedium" font-size="15" font-weight="400" fill="#7A1F08">
+                <tspan x="11" y="71">15 min</tspan>
+            </text>
+            <rect fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="121" height="102"></rect>
+            <image width="333" height="222" xlink:href="/app/static/bosanka.jpg" x="-150" y="-250" opacity="0" />
+        </g>
+        <g id="roadmapJadranska" class="point" transform="translate(808.000000, 702.000000)">
+            <rect id="Rectangle-2-Copy-16" fill="#FFFFFF" x="23" y="74" class="circle" width="14" height="14" rx="7"></rect>
+            <text id="Fotostop-Jadranska" font-family="hk_groteskbold" font-size="19" font-weight="bold" line-spacing="20" fill="#FFFFFF">
+                <tspan x="22" y="23">Fotostop</tspan>
+                <tspan x="22" y="43">Jadranska</tspan>
+            </text>
+            <text id="15-min-copy" opacity="0.5" font-family="hk_groteskmedium" font-size="15" font-weight="400" fill="#7A1F08">
+                <tspan x="22" y="62">15 min</tspan>
+            </text>
+            <rect id="Rectangle-Copy-4" fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="121" height="102"></rect>
+            <image width="333" height="162" xlink:href="/app/static/magistrala.jpg" x="-100" y="-200" opacity="0" />
+        </g>
+        <g id="roadmapPile" class="point" transform="translate(624.000000, 735.000000)">
+            <rect id="Rectangle-2-Copy-17" fill="#FFFFFF" x="48" y="62" class="circle" width="14" height="14" rx="7"></rect>
+            <text id="Pile" font-family="hk_groteskbold" font-size="23" font-weight="bold" line-spacing="24" fill="#FFFFFF">
+                <tspan x="38" y="49">Pile</tspan>
+            </text>
+            <rect id="Rectangle-Copy-3" fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="121" height="102"></rect>
+            <image width="333" height="222" xlink:href="/app/static/pile.jpg" x="-150" y="-250" opacity="0" />
+        </g>
+
+        <g id="roadmapD8" class="point" transform="translate(296.000000, 261.000000)">
+            <text id="Fotostop-D8" font-family="hk_groteskbold" font-size="19" font-weight="bold" line-spacing="20" fill="#FFFFFF">
+                <tspan x="32" y="31">Fotostop D8 </tspan>
+            </text>
+            <text id="10-min" opacity="0.5" font-family="hk_groteskmedium" font-size="15" font-weight="400" fill="#7A1F08">
+                <tspan x="31" y="52">10 min</tspan>
+            </text>
+            <rect id="Rectangle-2-Copy-22" fill="#FFFFFF" x="41" y="73" class="circle" width="14" height="14" rx="7"></rect>
+            <rect id="Rectangle" fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="167" height="95"></rect>
+            <image width="333" height="164" xlink:href="/app/static/d8.jpg" x="-100" y="-200" opacity="0" />
+        </g>
+        <g id="roadmapSunset" class="point" transform="translate(216.000000, 573.000000)">
+            <rect fill="#FFFFFF" x="52" y="10" class="circle" width="14" height="14" rx="7"></rect>
+            <text id="Sunset-Beach" font-family="hk_groteskbold" font-size="23" font-weight="bold" line-spacing="24" fill="#FFFFFF">
+                <tspan x="28" y="58">Sunset</tspan>
+                <tspan x="28" y="82">Beach</tspan>
+            </text>
+            <rect id="Rectangle-Copy-2" fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="121" height="102"></rect>
+            <image width="333" height="222" xlink:href="/app/static/beach.jpg" x="-100" y="150" opacity="0" />
+        </g>
+
+        <g id="roadmapValamar" class="point" transform="translate(122.000000, 437.000000)">
+            <rect id="Rectangle-2-Copy-19" fill="#FFFFFF" x="12" y="26" class="circle" width="14" height="14" rx="7"></rect>
+            <text id="Valamar-Dubrovnik-Pr" font-family="hk_groteskmedium" font-size="15" font-weight="400" line-spacing="20" fill="#FFFFFF">
+                <tspan x="37" y="38">Valamar Dubrovnik</tspan>
+                <tspan x="37" y="58">President Hotel</tspan>
+            </text>
+            <rect id="Rectangle-Copy" fill-opacity="0" fill="#000000" class="rect" fill-rule="nonzero" x="0" y="0" width="205" height="79"></rect>
+            <image width="333" height="202" xlink:href="/app/static/valamar.jpg" x="-100" y="-200" opacity="0" />
+        </g>
+    </g>
+</svg>

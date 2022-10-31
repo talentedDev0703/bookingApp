@@ -1,0 +1,39 @@
+/**
+ * Generate typography utility classes
+ *
+ * @type Map
+ */
+@mixin generate-typography ($typography) {
+    @each $name, $value in $typography {
+
+        @if type-of($value) != map {
+          .u-ff-#{$name} {
+              @include font-family($value);
+          }
+        }
+
+        @if $name == 'sizes' {
+          @each $size, $values in $value {
+            .u-fs-#{$size} {
+              @include fluid('font-size', $values...);
+            }
+          }
+        }
+
+        @if $name == 'elements' {
+          @each $size, $values in $value {
+            $max: nth($values, 4);
+            #{$size} {
+              @include fluid('font-size', $values...);
+            }
+          }
+        }
+    }
+}
+
+@mixin font-family ($typeface){
+    font-family: map-get($typography, default);
+    html.fontsLoaded & {
+        font-family: $typeface;
+    }
+}
